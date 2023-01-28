@@ -1,0 +1,335 @@
+.github {
+  /*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+  /** focus mode */
+  /*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+}
+.github {
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 100px;
+}
+.github > ul:first-child,
+.github > ol:first-child {
+  margin-top: 30px;
+}
+.github a {
+  color: #4183C4;
+}
+.github h1,
+.github h2,
+.github h3,
+.github h4,
+.github h5,
+.github h6 {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  cursor: text;
+}
+.github h1:hover a.anchor,
+.github h2:hover a.anchor,
+.github h3:hover a.anchor,
+.github h4:hover a.anchor,
+.github h5:hover a.anchor,
+.github h6:hover a.anchor {
+  text-decoration: none;
+}
+.github h1 tt,
+.github h1 code {
+  font-size: inherit;
+}
+.github h2 tt,
+.github h2 code {
+  font-size: inherit;
+}
+.github h3 tt,
+.github h3 code {
+  font-size: inherit;
+}
+.github h4 tt,
+.github h4 code {
+  font-size: inherit;
+}
+.github h5 tt,
+.github h5 code {
+  font-size: inherit;
+}
+.github h6 tt,
+.github h6 code {
+  font-size: inherit;
+}
+.github h1 {
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+.github h2 {
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+.github h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+.github h4 {
+  font-size: 1.25em;
+}
+.github h5 {
+  font-size: 1em;
+}
+.github h6 {
+  font-size: 1em;
+  color: #777;
+}
+.github p,
+.github blockquote,
+.github ul,
+.github ol,
+.github dl,
+.github table {
+  margin: 0.8em 0;
+}
+.github li > ol,
+.github li > ul {
+  margin: 0 0;
+}
+.github hr {
+  height: 2px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+.github li p.first {
+  display: inline-block;
+}
+.github ul,
+.github ol {
+  padding-left: 30px;
+}
+.github ul:first-child,
+.github ol:first-child {
+  margin-top: 0;
+}
+.github ul:last-child,
+.github ol:last-child {
+  margin-bottom: 0;
+}
+.github blockquote {
+  border-left: 4px solid #dfe2e5;
+  padding: 0 15px;
+  color: #777777;
+}
+.github blockquote blockquote {
+  padding-right: 0;
+}
+.github table {
+  padding: 0;
+  word-break: initial;
+}
+.github table tr {
+  border: 1px solid #dfe2e5;
+  margin: 0;
+  padding: 0;
+}
+.github table tr:nth-child(2n),
+.github thead {
+  background-color: #f8f8f8;
+}
+.github table th {
+  font-weight: bold;
+  border: 1px solid #dfe2e5;
+  border-bottom: 0;
+  margin: 0;
+  padding: 6px 13px;
+}
+.github table td {
+  border: 1px solid #dfe2e5;
+  margin: 0;
+  padding: 6px 13px;
+}
+.github table th:first-child,
+.github table td:first-child {
+  margin-top: 0;
+}
+.github table th:last-child,
+.github table td:last-child {
+  margin-bottom: 0;
+}
+.github .CodeMirror-lines {
+  padding-left: 4px;
+}
+.github .code-tooltip {
+  box-shadow: 0 1px 1px 0 rgba(0, 28, 36, 0.3);
+  border-top: 1px solid #eef2f2;
+}
+.github .md-fences,
+.github code,
+.github tt {
+  border: 1px solid #e7eaed;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  padding: 0;
+  padding: 2px 4px 0px 4px;
+  font-size: 0.9em;
+}
+.github code {
+  background-color: #f3f4f4;
+  padding: 0 2px 0 2px;
+}
+.github .md-fences {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+}
+.github .md-task-list-item > input {
+  margin-left: -1.3em;
+}
+@media print {
+  .github html {
+    font-size: 13px;
+  }
+  .github table,
+  .github pre {
+    page-break-inside: avoid;
+  }
+  .github pre {
+    word-wrap: break-word;
+  }
+}
+.github .md-fences {
+  background-color: #f8f8f8;
+}
+.github #write pre.md-meta-block {
+  padding: 1rem;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border: 0;
+  border-radius: 3px;
+  color: #777777;
+  margin-top: 0 !important;
+}
+.github .mathjax-block > .code-tooltip {
+  bottom: 0.375rem;
+}
+.github .md-mathjax-midline {
+  background: #fafafa;
+}
+.github #write > h3.md-focus:before {
+  left: -1.5625rem;
+  top: 0.375rem;
+}
+.github #write > h4.md-focus:before {
+  left: -1.5625rem;
+  top: 0.28571429rem;
+}
+.github #write > h5.md-focus:before {
+  left: -1.5625rem;
+  top: 0.28571429rem;
+}
+.github #write > h6.md-focus:before {
+  left: -1.5625rem;
+  top: 0.28571429rem;
+}
+.github .md-image > .md-meta {
+  /*border: 1px solid #ddd;*/
+  border-radius: 3px;
+  padding: 2px 0px 0px 4px;
+  font-size: 0.9em;
+  color: inherit;
+}
+.github .md-tag {
+  color: #a7a7a7;
+  opacity: 1;
+}
+.github .md-toc {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.github .sidebar-tabs {
+  border-bottom: none;
+}
+.github #typora-quick-open {
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+.github #typora-quick-open-item {
+  background-color: #FAFAFA;
+  border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+  border-style: solid;
+  border-width: 1px;
+}
+.github .on-focus-mode blockquote {
+  border-left-color: rgba(85, 85, 85, 0.12);
+}
+.github header,
+.github .context-menu,
+.github .megamenu-content,
+.github footer {
+  font-family: "Segoe UI", "Arial", sans-serif;
+}
+.github .file-node-content:hover .file-node-icon,
+.github .file-node-content:hover .file-node-open-state {
+  visibility: visible;
+}
+.github .mac-seamless-mode #typora-sidebar {
+  background-color: #fafafa;
+  background-color: var(--side-bar-bg-color);
+}
+.github .md-lang {
+  color: #b4654d;
+}
+.github #md-notification .btn {
+  border: 0;
+}
+.github .dropdown-menu .divider {
+  border-color: #e5e5e5;
+  opacity: 0.4;
+}
+.github .ty-preferences .window-content {
+  background-color: #fafafa;
+}
+.github .ty-preferences .nav-group-item.active {
+  color: white;
+  background: #999;
+}
+.github .menu-item-container a.menu-style-btn {
+  background-color: #f5f8fa;
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0));
+}
+.github mark {
+  background: #f8f8f8;
+  font-weight: 700;
+}
+img {
+	max-width: 500px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}

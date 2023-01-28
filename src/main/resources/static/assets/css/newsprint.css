@@ -1,0 +1,521 @@
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PT Serif'), local('PTSerif-Regular'), url('http://175.178.7.180:8088/assets/newsprint/pt-serif-v11-latin-regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* pt-serif-italic - latin */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: normal;
+  src: local('PT Serif Italic'), local('PTSerif-Italic'), url('http://175.178.7.180:8088/assets/newsprint/pt-serif-v11-latin-italic.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* pt-serif-700 - latin */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: bold;
+  src: local('PT Serif Bold'), local('PTSerif-Bold'), url('http://175.178.7.180:8088/assets/newsprint/pt-serif-v11-latin-700.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* pt-serif-700italic - latin */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: bold;
+  src: local('PT Serif Bold Italic'), local('PTSerif-BoldItalic'), url('.http://175.178.7.180:8088/assets/newsprint/pt-serif-v11-latin-700italic.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.newsprint {
+  --active-file-bg-color: #dadada;
+  --active-file-bg-color: rgba(32, 43, 51, 0.63);
+  --active-file-text-color: white;
+  --bg-color: #f3f2ee;
+  --text-color: #1f0909;
+  --control-text-color: #444;
+  --rawblock-edit-panel-bd: #e5e5e5;
+  --select-text-bg-color: rgba(32, 43, 51, 0.63);
+  --select-text-font-color: white;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f3f2ee;
+  font-family: "PT Serif", 'Times New Roman', Times, serif;
+  color: #1f0909;
+  line-height: 1.5em;
+    padding: 20px 30px 100px;
+  /* styles */
+  /* ====== */
+  /* headings */
+  /* links */
+  /* block spacing */
+  /* blockquote */
+  /* lists */
+  /* tables */
+  /* some fixes */
+  /** UI for electron */
+  /* https://github.com/typora/typora-issues/issues/2046 */
+}
+.newsprint pre {
+  --select-text-bg-color: #36284e;
+  --select-text-font-color: #fff;
+}
+.newsprint ol li {
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+.newsprint ul li {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+.newsprint ol,
+.newsprint ul {
+  list-style: none;
+}
+.newsprint blockquote,
+.newsprint q {
+  quotes: none;
+}
+.newsprint blockquote:before,
+.newsprint blockquote:after,
+.newsprint q:before,
+.newsprint q:after {
+  content: '';
+  content: none;
+}
+.newsprint table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.newsprint h1,
+.newsprint h2,
+.newsprint h3,
+.newsprint h4,
+.newsprint h5,
+.newsprint h6 {
+  font-weight: bold;
+}
+.newsprint h1 {
+  font-size: 1.875em;
+  /*30 / 16*/
+  line-height: 1.6em;
+  /* 48 / 30*/
+  margin-top: 2em;
+}
+.newsprint h2,
+.newsprint h3 {
+  font-size: 1.3125em;
+  /*21 / 16*/
+  line-height: 1.15;
+  /*24 / 21*/
+  margin-top: 2.285714em;
+  /*48 / 21*/
+  margin-bottom: 1.15em;
+  /*24 / 21*/
+}
+.newsprint h3 {
+  font-weight: normal;
+}
+.newsprint h4 {
+  font-size: 1.125em;
+  /*18 / 16*/
+  margin-top: 2.67em;
+  /*48 / 18*/
+}
+.newsprint h5,
+.newsprint h6 {
+  font-size: 1em;
+  /*16*/
+}
+.newsprint h1 {
+  border-bottom: 1px solid;
+  margin-bottom: 1.875em;
+  padding-bottom: 0.8125em;
+}
+.newsprint a {
+  text-decoration: none;
+  color: #065588;
+}
+.newsprint a:hover,
+.newsprint a:active {
+  text-decoration: underline;
+}
+.newsprint p,
+.newsprint blockquote,
+.newsprint .md-fences {
+  margin-bottom: 1.5em;
+}
+.newsprint h1,
+.newsprint h2,
+.newsprint h3,
+.newsprint h4,
+.newsprint h5,
+.newsprint h6 {
+  margin-bottom: 1.5em;
+}
+.newsprint blockquote {
+  font-style: italic;
+  border-left: 5px solid;
+  margin-left: 2em;
+  padding-left: 1em;
+}
+.newsprint ul,
+.newsprint ol {
+  margin: 0 0 1.5em 1.5em;
+}
+.newsprint .md-meta,
+.newsprint .md-before,
+.newsprint .md-after {
+  color: #999;
+}
+.newsprint table {
+  margin-bottom: 1.5em;
+  /*24 / 16*/
+  font-size: 1em;
+  /* width: 100%; */
+}
+.newsprint thead th,
+.newsprint tfoot th {
+  padding: 0.25em 0.25em 0.25em 0.4em;
+  text-transform: uppercase;
+}
+.newsprint th {
+  text-align: left;
+}
+.newsprint td {
+  vertical-align: top;
+  padding: 0.25em 0.25em 0.25em 0.4em;
+}
+.newsprint code,
+.newsprint .md-fences {
+  background-color: #dadada;
+}
+.newsprint code {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.newsprint .md-fences {
+  margin-left: 2em;
+  margin-bottom: 3em;
+  padding-left: 1ch;
+  padding-right: 1ch;
+}
+.newsprint pre,
+.newsprint code,
+.newsprint tt {
+  font-size: 0.875em;
+  line-height: 1.714285em;
+}
+.newsprint h1 {
+  line-height: 1.3em;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+.newsprint p + ul,
+.newsprint p + ol {
+  margin-top: 0.5em;
+}
+.newsprint h3 + ul,
+.newsprint h4 + ul,
+.newsprint h5 + ul,
+.newsprint h6 + ul,
+.newsprint h3 + ol,
+.newsprint h4 + ol,
+.newsprint h5 + ol,
+.newsprint h6 + ol {
+  margin-top: 0.5em;
+}
+.newsprint li > ul,
+.newsprint li > ol {
+  margin-top: inherit;
+  margin-bottom: 0;
+}
+.newsprint li ol > li {
+  list-style-type: lower-alpha;
+}
+.newsprint li li ol > li {
+  list-style-type: lower-roman;
+}
+.newsprint h2,
+.newsprint h3 {
+  margin-bottom: 0.75em;
+}
+.newsprint hr {
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid;
+  border-left: none;
+}
+.newsprint h1 {
+  border-color: #c5c5c5;
+}
+.newsprint blockquote {
+  border-color: #bababa;
+  color: #656565;
+}
+.newsprint blockquote ul,
+.newsprint blockquote ol {
+  margin-left: 0;
+}
+.newsprint .ty-table-edit {
+  background-color: transparent;
+}
+.newsprint thead {
+  background-color: #dadada;
+}
+.newsprint tr:nth-child(even) {
+  background: #e8e7e7;
+}
+.newsprint hr {
+  border-color: #c5c5c5;
+}
+.newsprint .task-list {
+  padding-left: 1rem;
+}
+.newsprint .md-task-list-item {
+  padding-left: 1.5rem;
+  list-style-type: none;
+}
+.newsprint .md-task-list-item > input:before {
+  content: '\221A';
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.6rem;
+  vertical-align: middle;
+  text-align: center;
+  color: #ddd;
+  background-color: #F3F2EE;
+}
+.newsprint .md-task-list-item > input:checked:before,
+.newsprint .md-task-list-item > input[checked]:before {
+  color: inherit;
+}
+.newsprint pre.md-meta-block {
+  min-height: 1.875rem;
+  color: #555;
+  border: 0px;
+  background: transparent;
+  margin-top: -4px;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+.newsprint .md-image > .md-meta {
+  color: #9B5146;
+}
+.newsprint .md-image > .md-meta {
+  font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', serif;
+}
+.newsprint > h3.md-focus:before {
+  left: -1.5rem;
+  color: #999;
+  border-color: #999;
+}
+.newsprint > h4.md-focus:before {
+  left: -1.5rem;
+  top: 0.25rem;
+  color: #999;
+  border-color: #999;
+}
+.newsprint > h5.md-focus:before {
+  left: -1.5rem;
+  top: 0 0.3125rem;
+  color: #999;
+  border-color: #999;
+}
+.newsprint > h6.md-focus:before {
+  left: -1.5rem;
+  top: 0.3125rem;
+  color: #999;
+  border-color: #999;
+}
+.newsprint .md-toc:focus .md-toc-content {
+  margin-top: 19px;
+}
+.newsprint .md-toc-content:empty:before {
+  color: #065588;
+}
+.newsprint .md-toc-item {
+  color: #065588;
+}
+.newsprint div.md-toc-tooltip {
+  background-color: #f3f2ee;
+}
+.newsprint #typora-sidebar {
+  background-color: #f3f2ee;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+}
+.newsprint .pin-outline #typora-sidebar {
+  background: inherit;
+  box-shadow: none;
+  border-right: 1px dashed;
+}
+.newsprint .pin-outline #typora-sidebar:hover .outline-title-wrapper {
+  border-left: 1px dashed;
+}
+.newsprint .outline-item:hover {
+  background-color: #dadada;
+  border-left: 28px solid #dadada;
+  border-right: 18px solid #dadada;
+}
+.newsprint .typora-node .outline-item:hover {
+  border-right: 28px solid #dadada;
+}
+.newsprint .outline-expander:before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  font-size: 14px;
+  top: 1px;
+}
+.newsprint .outline-expander:hover:before,
+.newsprint .outline-item-open > .outline-item > .outline-expander:before {
+  content: "\f0d7";
+}
+.newsprint .modal-content {
+  background-color: #f3f2ee;
+}
+.newsprint .auto-suggest-container ul li {
+  list-style-type: none;
+}
+.newsprint .megamenu-menu,
+.newsprint #top-titlebar,
+.newsprint #top-titlebar *,
+.newsprint .megamenu-content {
+  background: #f3f2ee;
+  color: #1f0909;
+}
+.newsprint .megamenu-menu-header {
+  border-bottom: 1px dashed #202B33;
+}
+.newsprint .megamenu-menu {
+  box-shadow: none;
+  border-right: 1px dashed;
+}
+.newsprint header,
+.newsprint .context-menu,
+.newsprint .megamenu-content,
+.newsprint footer {
+  font-family: "PT Serif", 'Times New Roman', Times, serif;
+  color: #1f0909;
+}
+.newsprint #megamenu-back-btn {
+  color: #1f0909;
+  border-color: #1f0909;
+}
+.newsprint .megamenu-menu-header #megamenu-menu-header-title:before {
+  color: #1f0909;
+}
+.newsprint .megamenu-menu-list li a:hover,
+.newsprint .megamenu-menu-list li a.active {
+  color: inherit;
+  background-color: #e8e7df;
+}
+.newsprint .long-btn:hover {
+  background-color: #e8e7df;
+}
+.newsprint #recent-file-panel tbody tr:nth-child(2n-1) {
+  background-color: transparent !important;
+}
+.newsprint .megamenu-menu-panel tbody tr:hover td:nth-child(2) {
+  color: inherit;
+}
+.newsprint .megamenu-menu-panel .btn {
+  background-color: #D2D1D1;
+}
+.newsprint .btn-default {
+  background-color: transparent;
+}
+.newsprint .typora-sourceview-on #toggle-sourceview-btn,
+.newsprint .ty-show-word-count #footer-word-count {
+  background: #c7c5c5;
+}
+.newsprint #typora-quick-open {
+  background-color: inherit;
+}
+.newsprint .md-diagram-panel {
+  margin-top: 8px;
+}
+.newsprint .file-list-item-file-name {
+  font-weight: initial;
+}
+.newsprint .file-list-item-summary {
+  opacity: 1;
+}
+.newsprint .file-list-item {
+  color: #777;
+}
+.newsprint .file-list-item.active {
+  background-color: inherit;
+  color: black;
+}
+.newsprint .ty-side-sort-btn.active {
+  background-color: inherit;
+}
+.newsprint .file-list-item.active .file-list-item-file-name {
+  font-weight: bold;
+}
+.newsprint .file-list-item {
+  opacity: 1 !important;
+}
+.newsprint .file-library-node.active > .file-node-background {
+  background-color: rgba(32, 43, 51, 0.63);
+  background-color: var(--active-file-bg-color);
+}
+.newsprint .file-tree-node.active > .file-node-content {
+  color: white;
+  color: var(--active-file-text-color);
+}
+.newsprint .md-task-list-item > input {
+  margin-left: -1.7em;
+  margin-top: calc(1rem - 12px);
+}
+.newsprint input {
+  border: 1px solid #aaa;
+}
+.newsprint .megamenu-menu-header #megamenu-menu-header-title,
+.newsprint .megamenu-menu-header:hover,
+.newsprint .megamenu-menu-header:focus {
+  color: inherit;
+}
+.newsprint .dropdown-menu .divider {
+  border-color: #e5e5e5;
+  opacity: 1;
+}
+.newsprint .os-windows-7 strong,
+.newsprint .os-windows-7 strong {
+  font-weight: 760;
+}
+.newsprint .ty-preferences .btn-default {
+  background: transparent;
+}
+.newsprint .ty-preferences .window-header {
+  border-bottom: 1px dashed #202B33;
+  box-shadow: none;
+}
+.newsprint #sidebar-loading-template,
+.newsprint #sidebar-loading-template.file-list-item {
+  color: #777;
+}
+.newsprint .searchpanel-search-option-btn.active {
+  background: #777;
+  color: white;
+}
+.newsprint .export-detail,
+.newsprint .light .export-detail,
+.newsprint .light .export-item.active,
+.newsprint .light .export-items-list-control {
+  background: #e0e0e0;
+  border-radius: 2px;
+  font-weight: 700;
+  color: inherit;
+}
+img {
+	max-width: 500px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
